@@ -1,3 +1,5 @@
+#![allow(unused_labels)]
+
 use rand::prelude::*;
 use rodio::source::{SineWave, Source};
 use rodio::{OutputStream, Sink};
@@ -102,7 +104,7 @@ fn main() {
     let (_stream, stream_handle) = OutputStream::try_default().unwrap();
     let sink = Sink::try_new(&stream_handle).unwrap();
 
-    let mut notes = from_scale(0b_101011010101);
+    let mut notes = from_scale(0b_1010_1101_0101);
     notes.push(12); // literally the only reason notes is mut
 
     let mut rng = thread_rng();
