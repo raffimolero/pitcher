@@ -71,7 +71,7 @@ fn play_scale(sink: &Sink, notes: &[i32], note_duration: Duration) {
 }
 
 fn choose_biased(rng: &mut impl Rng, notes: &[i32], stats: &[i32]) -> (usize, i32) {
-    let base_weight = notes.iter().max().unwrap() + 3;
+    let base_weight = stats.iter().max().unwrap() + 1;
     let weights = stats
         .iter()
         .map(|stat| base_weight - stat)
