@@ -17,7 +17,6 @@ it will then change your score based on whether you got it right.
 if you forget which note it played, type `?` and it will play the note again.
 there is currently no way to replay the whole scale.
 
-Note: this image is outdated
 ![gameplay.png](gameplay.png)
 
 the game will kindasorta try to balance the notes out based on which ones you have lower scores on.
